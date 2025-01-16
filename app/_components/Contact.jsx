@@ -10,7 +10,7 @@ const Contact = () => {
           Contact Us
         </h1>
         <p className="mt-4 text-lg text-gray-600 text-center">
-          Have questions? We're here to help. Get in touch with us today!
+          Have questions? We&apos;re here to help. Get in touch with us today!
         </p>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
