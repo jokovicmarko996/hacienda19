@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --card-bg-color: #1a1a1a;
+  --card-text-color: #eee;
+  --card-border-radius: 30px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .card-before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 70px;
+    background-color: transparent;
+    border-bottom-left-radius: 30px;
+    box-shadow: -30px 30px 0 var(--background-color);
+    content: "";
+  }
+  .card-after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: calc(40% - 10px);
+    background-color: var(--background-color);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.125rem; /* large equivalent */
+    content: "";
+  }
+}
