@@ -1,10 +1,10 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/app/_components/Header";
+import Footer from "@/app/_components/Footer";
 import { Montserrat } from "@next/font/google";
 import { Caveat, Roboto, Dancing_Script, Satisfy } from "next/font/google";
-import HeaderC from "@/components/HeaderC";
+import HeaderC from "@/app/_components/HeaderC";
 
 const caveat = Caveat({
   subsets: ["latin"], // Choose appropriate subsets
